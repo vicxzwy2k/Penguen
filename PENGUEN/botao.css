@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend");
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+  --x1: 0;
+  --y1: 0;
+  --x2: 0;
+  --y2: 0;
+  --x3: 0;
+  --y3: 0;
+  --x4: 0;
+  --y4: 0;
+  --x5: 0;
+  --y5: 0;
+  --x6: 0;
+  --y6: 0;
+  --x7: 0;
+  --y7: 0;
+  
+}
+
+
+
+span {
+  font-family: "Lexend";
+  font-weight: medium;
+  color: #fff;
+  text-shadow: var(--x1) var(--y1) 0.25rem rgba(0, 48, 172, 0.65);
+  font-size: 1.4rem;
+}
+
+.button-site {
+  background-image: linear-gradient(#1680cc, #165fcc);
+  outline: inset 1px rgba(0, 0, 0, 0.03);
+  border: none;
+  border-radius: 2.2rem;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem 4rem 2rem 4rem;
+  box-sizing: border-box;
+  box-shadow: 
+    inset 0 -4px 1px 1px rgba(0, 0, 0, 0.3),
+    inset var(--x1) var(--y1) 8px rgba(255, 255, 255, 0.25),
+    inset var(--x2) var(--y2) 20px rgba(255, 255, 255, 0.2),
+    var(--x1) var(--y1) 12px rgba(0, 81, 167, 0.15),
+    var(--x2) var(--y2) 20px rgba(0, 81, 167, 0.2),
+    var(--x3) var(--y3) 35px rgba(0, 81, 167, 0.2),
+    var(--x4) var(--y4) 50px rgba(0, 81, 167, 0.2), 
+    var(--x5) var(--y5) 65px rgba(0, 81, 167, 0.2),
+    0 3px 10px rgba(0, 47, 96, 0.3);
+
+  position: relative;
+  cursor: pointer;
+}
+
+
+button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 40, 117, 0.08);
+  border-radius: 2.8rem;
+  z-index: -1;
+}
+
+button:active {
+  box-shadow: 
+    inset var(--x1) var(--y1) 8px rgba(255, 255, 255, 0.1),
+    inset var(--x2) var(--y2) 20px rgba(255, 255, 255, 0.1),
+    0 3px 10px rgba(0, 47, 96, 0.3), 
+    inset 0 3px 8px 1px rgba(21, 108, 199, 1);
+}
+
+#light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  padding-left:var(--x6);
+  padding-top: var(--y6);
+  pointer-events: none;
+}
+
+#light::before {
+  content: "";
+  height: 22rem;
+  width: 22rem;
+  position: absolute;
+  background-color: #fff;
+  mix-blend-mode: plus-lighter;
+  border-radius: 5000px;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  opacity: 20%;
+}
+.content-site{
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+ 
+  margin-bottom: 30px;
+}

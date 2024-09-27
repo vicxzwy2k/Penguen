@@ -1,0 +1,113 @@
+
+.quadro {
+  display: flex;
+  justify-content: center;
+}
+
+
+.fonte {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rbd {
+  background-color: #234995;
+  padding: 30px;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.rbd:hover {
+  background-color: #104c96;
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.nome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px; /* Add margin to space out from the image */
+}
+
+.content-site {
+  text-align: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quadro2{
+  display: flex;
+  justify-content: center;
+}
+
+.rbd2 img {
+  width: 200px;
+}
+
+
+/*  background-color: #02529d;
+  padding: 230px;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  */
+
+.rbd2 {
+  background-color: #02529d;
+  padding: 30px;
+  margin: 20px;
+
+  /*border-radius: 50px;*/
+  /*border-top-right-radius: 30px;*/
+  border-top-right-radius: 30px;
+
+
+
+}
+
+.nome2{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.fonte2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rbd2:hover{
+  background-color: #023e8a;
+  cursor: pointer;
+  opacity: 70%;
+  transform: scale(1.1);
+ 
+  
+}

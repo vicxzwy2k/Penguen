@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  transition: 0.5s;
+}
+.content {
+  background-color: #e0e3f1;
+  padding: 100px 50px;
+  color: #000000;
+  
+}
+.content h2 {
+  font-size: 42px;
+ 
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  background: linear-gradient(to top, #d3e8ee, #0f3e9b);
+  overflow: hidden;
+  pointer-events: auto;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #d3e8ee, transparent);
+  z-index: 100;
+}
+section img {
+  position: absolute;
+}
+#zaamin {
+  width: 100%;
+  bottom: 0;
+  z-index: 12;
+}
+#pyramid {
+  right: 0;
+  width: 50vw;
+  bottom: 80px;
+  z-index: 11;
+}
+#cover {
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+#stone {
+  width: 100%;
+  right: 0;
+  bottom: 30px;
+  z-index: 9;
+}
+#bottom_cloud {
+  right: 220px;
+  bottom: 200px;
+}
+#right_cloud {
+  right: -180px;
+  top: 100px;
+}
+#left_cloud {
+  left: -70px;
+  top: 250px;
+  z-index: 4;
+}
+#moon {
+  top: 120px;
+  left: -80px;
+  mix-blend-mode: screen;
+  z-index: 3;
+}
+#text {
+  left: 0;
+  mix-blend-mode: screen;
+}
+#stars {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #text {
+    left: -100px !important;
+  }
+}
+@media (max-width: 576px) {
+  #text {
+    left: -250px !important;
+    z-index: 10;
+  }
+}
+.list{
+  list-style-type: none;
+}
+.mt-0 {
+  margin-top: 45px !important;
+ 
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Bloqueia o scroll horizontal */
+}
+
+.header {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(18, 78, 243, 0.7), rgba(17, 48, 114, 0.7)); /* Degradê com opacidade */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  position: relative; /* Para garantir que o texto fique acima do fundo */
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-button {
+  background-color: white;
+  border: none;
+  color: #124ef3;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #124ef3;
+  color: white;
+}
+.rodape{
+  background-color: #274060;
+  color: white;
+  margin-top: 20px;
+}
